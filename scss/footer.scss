@@ -1,0 +1,55 @@
+.footer {
+  border: 4px solid var(--primary);
+  border-bottom: none;
+  border-radius: 64px 64px 0 0;
+  padding: 40px 0 24px 0;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+  }
+
+  &__menu {
+
+    &_items {
+      display: flex;
+      gap: 40px;
+    }
+
+    &_item {
+    }
+
+    &_link {
+
+      &:hover{
+        color: var(--primary);
+      }
+    }
+  }
+
+  &__social {
+    
+
+    &_title {
+      text-align: right;
+      margin-bottom: 14px;
+    }
+
+    &_items {
+      display: flex;
+      gap: 8px;
+    }
+
+    &_link {
+
+      &:hover > svg > defs > linearGradient > stop:last-child  {
+        stop-color: #9DADF2;
+      }
+    }
+  }
+}
+
+
+
