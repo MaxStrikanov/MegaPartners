@@ -12,7 +12,7 @@
   <body>
     <div class="container">
       <header class="header">
-        <img src="img/logo.svg" alt="">
+        <img class="header__logo" src="img/logo.svg" alt="">
 
         <nav class="header__menu">
           <ul class="header__menu_items">
@@ -35,6 +35,8 @@
               <a href="#" class="header__menu_link">Careers</a>
             </li>
           </ul>
+          <button class="header__control_btn in__mobile">LOG IN</button>
+          <button class="header__control_btn in__mobile">SIGN UP</button>
         </nav>
 
         <div class="header__control">
@@ -42,13 +44,16 @@
             <img src="/img/planet.svg" alt="">
             <span>EN</span>
           </button>
-          <button class="header__control_btn">LOG IN</button>
-          <button class="header__control_btn">SIGN UP</button>
+          <button class="header__control_btn no__mobile">LOG IN</button>
+          <button class="header__control_btn no__mobile">SIGN UP</button>
         </div>
+
+        <input type="checkbox" id="burger__checkbox" class="burger__checkbox">
+        <label class="burger" for="burger__checkbox"></label>
       </header>
     </div>
     
-    <main>
+    <main class="main">
       <div class="container main__container">
 
         <div class="main__title_items">
@@ -59,24 +64,75 @@
           <p class="main__subTitle">Raise your ROI with direct advertiser</p>
           <button class="main__btn">Become a Partner</button>
         </div>
+
+        <div class="scroll__wrapper">
+          <div class="scroll in__mobile" style="--t:17s">
+            <div>
+              <img src="/img/Shield.svg" alt="">
+              <img src="/img/Soccer.svg" alt="">
+              <img src="/img/Shield.svg" alt="">
+              <img src="/img/Crown.svg" alt="">
+              <img src="/img/M (3).svg" alt="">
+              <img src="/img/Shield.svg" alt="">
+              <img src="/img/Crown.svg" alt="">
+              <img src="/img/M (3).svg" alt="">
+            </div>
+          </div>
+
+          <div class="scroll in__mobile" style="--t:23s">
+            <div>
+              <img src="/img/Crown.svg" alt="">
+              
+              <img src="/img/M (3).svg" alt="">
+              <img src="/img/Shield.svg" alt="">
+              <img src="/img/Soccer.svg" alt="">
+              <img src="/img/Shield.svg" alt="">
+              <img src="/img/Crown.svg" alt="">
+              <img src="/img/M (3).svg" alt="">
+              <img src="/img/Shield.svg" alt="">
+              <img src="/img/Crown.svg" alt="">
+              <img src="/img/M (3).svg" alt="">
+            </div>
+          </div>
+
+          <div class="scroll in__mobile" style="--t:19s">
+            <div>
+              <img src="/img/Crown.svg" alt="">
+              <img src="/img/M (3).svg" alt="">
+              <img src="/img/Shield.svg" alt="">
+              <img src="/img/Soccer.svg" alt="">
+              <img src="/img/Shield.svg" alt="">
+              <img src="/img/Crown.svg" alt="">
+              <img src="/img/M (3).svg" alt="">
+              <img src="/img/Shield.svg" alt="">
+              <img src="/img/Crown.svg" alt="">
+              <img src="/img/M (3).svg" alt="">
+            </div>
+          </div>
+        </div>
         
-        <div class="scroll__animation">
-          <div class="scroll__animation_left">
+
+        <div class="scroll__animation no__mobile">
+          <div class="scroll__animation_left" >
             <img src="/img/Shield.svg" alt="">
             <img src="/img/$.svg" alt="">
             <img src="/img/Soccer.svg" alt="">
             <img src="/img/M (3).svg" alt="">
+            <img src="/img/Shield.svg" alt=""> 
+            <img src="/img/M (3).svg" alt="">
             <img src="/img/Shield.svg" alt="">
-            <img src="/img/$.svg" alt="">
           </div>
-          <div class="scroll__animation_center">
+          <div class="scroll__animation_center" aria-hidden="true">
             <img src="/img/M.svg" alt="">
             <img src="/img/Timer.svg" alt="">
             <img src="/img/Crown.svg" alt="">
             <img src="/img/World.svg" alt="">
             <img src="/img/M.svg" alt="">
+            <img src="/img/Crown.svg" alt="">
+            <img src="/img/World.svg" alt="">
+            <img src="/img/M.svg" alt="">
           </div>
-          <div class="scroll__animation_rigth">
+          <div class="scroll__animation_rigth" aria-hidden="true">
             <img src="/img/Crown.svg" alt="">
             <img src="/img/M (2).svg" alt="">
             <img src="/img/Shield.svg" alt="">
@@ -89,38 +145,51 @@
         <div class="blog__wrapper">
           <h2 class="blog__title">BLOG</h2>
 
-          <div class="blog__items">
-            <a href="" class="blog__item">
-              <p class="blog__text">A handcrafted, small-batch, artisinal pour-over version of the classic lorem ipsum
-                generator, Hipster Ipsum will give your mocks that blue collar touch.</p>
-              <span class="blog__data">25.10.2023</span>
-            </a>
-            <a href="" class="blog__item">
-              <p class="blog__text">Raise your design from the dead with an army of Zombie Ipsum, frightful filler
-                text that just won't die. Try the lorem ipsum of the undead if you dare</p>
-              <span class="blog__data">26.10.2023</span>
-            </a>
-            <a href="" class="blog__item">
-              <p class="blog__text">Like your lorem ipsum extra crispy? Then Bacon Ipsum is the placeholder text
-                generator for you. Side of eggs and hashbrowns is optional, but recommended</p>
-              <span class="blog__data">27.10.2023</span>
-            </a>
-            <a href="" class="blog__item">
-              <p class="blog__text">Sugary sweet lorem ipsum? You got it with Cupcake Ipsum, the only text generator
-                that includes marshmallows, carrot cake, and perhaps even a cherry on top.</p>
-              <span class="blog__data">28.10.2023</span>
-            </a>
-            <a href="" class="blog__item">
-              <p class="blog__text">A web generator and jQuery plugin, Delorean Ipsum uses the script from Back to the
-                Future to generate quotable lorem ipsum text for every project, past or present.</p>
-              <span class="blog__data">29.10.2023</span>
-            </a>
-            <a href="" class="blog__item">
-              <p class="blog__text">Explore the far reaches of the galaxy with this space-themed dummy text generator,
-                with quotes from TV classics like Star Trek and real astronauts themselves.</p>
-              <span class="blog__data"></span>
-            </a>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="blog__items">
+
+                  <a href="" class="blog__item">
+                    <p class="blog__text">A handcrafted, small-batch, artisinal pour-over version of the classic lorem
+                      ipsum
+                      generator, Hipster Ipsum will give your mocks that blue collar touch.</p>
+                    <span class="blog__data">25.10.2023</span>
+                  </a>
+                  <a href="" class="blog__item">
+                    <p class="blog__text">Raise your design from the dead with an army of Zombie Ipsum, frightful filler
+                      text that just won't die. Try the lorem ipsum of the undead if you dare</p>
+                    <span class="blog__data">26.10.2023</span>
+                  </a>
+                  <a href="" class="blog__item">
+                    <p class="blog__text">Like your lorem ipsum extra crispy? Then Bacon Ipsum is the placeholder text
+                      generator for you. Side of eggs and hashbrowns is optional, but recommended</p>
+                    <span class="blog__data">27.10.2023</span>
+                  </a>
+                  <a href="" class="blog__item">
+                    <p class="blog__text">Sugary sweet lorem ipsum? You got it with Cupcake Ipsum, the only text
+                      generator
+                      that includes marshmallows, carrot cake, and perhaps even a cherry on top.</p>
+                    <span class="blog__data">28.10.2023</span>
+                  </a>
+                  <a href="" class="blog__item">
+                    <p class="blog__text">A web generator and jQuery plugin, Delorean Ipsum uses the script from Back to
+                      the
+                      Future to generate quotable lorem ipsum text for every project, past or present.</p>
+                    <span class="blog__data">29.10.2023</span>
+                  </a>
+                  <a href="" class="blog__item">
+                    <p class="blog__text">Explore the far reaches of the galaxy with this space-themed dummy text
+                      generator,
+                      with quotes from TV classics like Star Trek and real astronauts themselves.</p>
+                    <span class="blog__data"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
           </div>
+          
         </div>
         
       </div>

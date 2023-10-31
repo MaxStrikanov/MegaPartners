@@ -82,6 +82,10 @@ iframe {
   border: none;
 }
 
+
+.no-mobile {
+  display: none;
+}
 .visually-hidden {
   position: fixed;
   transform: scale(0);
@@ -90,33 +94,57 @@ iframe {
 .container {
   width: min(100% - 140px, 1640px);
   margin-inline: auto;
-}
 
-.container {
-  max-width: 1640px;
-  margin: 0 auto;
-
-  @media (min-width: 580px) {
-    padding: 0 29px;
-  }
-
-  @media (min-width: 820px) {
-    padding: 0 43px;
-  }
-
-  @media (min-width: 1120px) {
-    padding: 0 92px;
+  @media (max-width: 580px) {
+    width: min(100% - 10px, 1640px);
   }
 }
+
+// .container {
+//   max-width: 1640px;
+//   margin: 0 auto;
+
+//   @media (min-width: 580px) {
+//     padding: 0 29px;
+//   }
+
+//   @media (min-width: 820px) {
+//     padding: 0 43px;
+//   }
+
+//   @media (min-width: 1120px) {
+//     padding: 0 92px;
+//   }
+// }
 
 main {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
 
-  @media (min-width: 580px) {
-  
+  @media (max-width: 580px) {
+    flex-grow: 0;
+    height: 100%;
+  }
+
+}
+
+.no__mobile {
+    display: block ;
+}
+
+.in__mobile {
+    display: none !important;
+}
+
+@media (max-width: 580px) {
+  .in__mobile {
+    display: flex !important;
+  }
+  .no__mobile {
+    display: none !important;
   }
 
 
